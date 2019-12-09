@@ -13,6 +13,10 @@ public class Divide extends AbstractOperation implements BinaryOperation {
 	@Override
 	public float perform(float arg1, float arg2)
 	{
+		if(0 == arg2)
+		{
+			return 0;
+		}
 		return arg1 / arg2;
 	}
 
