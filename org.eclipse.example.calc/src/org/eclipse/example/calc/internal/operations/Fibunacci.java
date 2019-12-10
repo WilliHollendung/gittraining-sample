@@ -15,11 +15,11 @@ public class Fibunacci extends AbstractOperation implements BinaryOperation
     public float perform(float arg1, float arg2)
     {
         int start = Float.valueOf(arg1).intValue();
-        int anz =  Float.valueOf(arg1).intValue();
+        int anz =  Float.valueOf(arg2).intValue();
         if(anz < 1)
             return 0;
         int sum = start;
-        for(int i = 1; i < anz;i++)
+        for(int i = 0; i < anz;i++)
         {
             start++;
             sum += start;
